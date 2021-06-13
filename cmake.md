@@ -1,0 +1,5 @@
+CC=icc CXX=icpc F77=ifort FC=ifort 
+
+cmake -DCMAKE_INSTALL_PREFIX:PATH=/home/supertan/Install/lib/scalapack -DCMAKE_BUILD_TYPE=Debug -DCMAKE_POSITION_INDEPENDENT_CODE=ON ..
+
+-DCMAKE_POSITION_INDEPENDENT_CODE=ON  == -fPIC
